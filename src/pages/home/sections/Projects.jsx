@@ -1,8 +1,8 @@
 import Section from "../../../components/Section";
 import ProjectCard from "../../../components/ProjectCard";
 import { Flex } from "@chakra-ui/react"
-import { SiChakraui, SiExpress, SiRedux, SiExpo } from "react-icons/si";
-import { FaJs, FaNodeJs,FaReact, FaHtml5, FaCss3Alt, FaBootstrap, FaGitAlt } from "react-icons/fa";
+import { SiChakraui } from "react-icons/si";
+import { FaJs, FaReact, FaHtml5, FaCss3Alt, FaBootstrap } from "react-icons/fa";
 
 const Projects = () => {
     const section = {
