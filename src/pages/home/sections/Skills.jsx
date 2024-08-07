@@ -1,5 +1,5 @@
 import { Icon, HStack } from "@chakra-ui/react";
-import { SiChakraui, SiExpress } from "react-icons/si";
+import { SiChakraui, SiExpress, SiRedux, SiExpo } from "react-icons/si";
 import { FaJs, FaNodeJs,FaReact, FaHtml5, FaCss3Alt, FaBootstrap, FaGitAlt } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 import Section from "../../../components/Section"
@@ -55,6 +55,16 @@ const Skills = () => {
             id: 10,
             icon: FaGitAlt,
             label: 'Git',
+        },
+        {
+            id: 11,
+            icon: SiRedux,
+            label: 'Redux',
+        },
+        {
+            id: 12,
+            icon: SiExpo,
+            label: 'Expo',
         },
     ]
 
