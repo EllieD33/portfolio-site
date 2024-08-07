@@ -1,13 +1,13 @@
 import Skills from "./sections/Skills";
 import Profile from "./sections/Profile";
-import { Heading } from "@chakra-ui/react";
+import Projects from "./sections/Projects";
 
 const Home = () => {
     return (
         <main>
-            <Heading as="h2">Ellen Daly</Heading>
             <Profile />
             <Skills />
+            <Projects />
         </main>
     )
 }
