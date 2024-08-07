@@ -1,4 +1,4 @@
-import { Icon, HStack } from "@chakra-ui/react";
+import { Icon, Text, Flex } from "@chakra-ui/react";
 import { SiChakraui, SiExpress, SiRedux, SiExpo } from "react-icons/si";
 import { FaJs, FaNodeJs,FaReact, FaHtml5, FaCss3Alt, FaBootstrap, FaGitAlt } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
@@ -66,14 +66,22 @@ const Skills = () => {
             icon: SiExpo,
             label: 'Expo',
         },
+        {
+            id: 13,
+            icon: FaReact,
+            label: 'React Native',
+        },
     ]
 
     const content = (
-        <HStack>
+        <Flex gap={5} flexWrap="wrap" justifyContent="center" mt={2} >
                 {skillsIcons.map(({ id, icon, label }) => (
-                        <Icon key={id} as={icon} aria-label={label} boxSize={10} />
+                        <Flex key={id} flexDirection="column" alignItems="center" >
+                            <Icon as={icon} boxSize={12} />
+                            <Text>{label}</Text>
+                        </Flex>
                         ))}
-            </HStack>
+        </Flex>
     )
 
     const section = {
