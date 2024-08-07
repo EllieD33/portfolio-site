@@ -70,6 +70,10 @@ const Skills = () => {
         },
     ];
 
+    const learningIcons = [
+        { id: 1, src: "https://img.icons8.com/ios-filled/50/7506B1/c-sharp-logo.png", label: 'C#' },
+        { id: 2, src: "https://img.icons8.com/color/48/net-framework.png", label: '.NET' },
+    ];
 
     return (
         <Section title="Skills">
@@ -83,14 +87,12 @@ const Skills = () => {
             </Flex>
             <Heading mt={4}  as="h3" fontSize="lg">Currently learning:</Heading>
             <Flex gap={5}>
-                <Flex mt={2} flexDirection="column" alignItems={"center"}>
-                    <Image src="https://img.icons8.com/ios-filled/50/7506B1/c-sharp-logo.png" boxSize={12} />
-                    <Text>C#</Text>
-                </Flex>
-                <Flex mt={2} flexDirection="column" alignItems={"center"}>
-                    <Image src="https://img.icons8.com/color/48/net-framework.png" boxSize={12} />
-                    <Text>.NET</Text>
-                </Flex>
+                {learningIcons.map(({ id, src, label }) => (
+                    <Flex key={id} mt={2} flexDirection="column" alignItems="center">
+                        <Image src={src} boxSize={12} />
+                        <Text>{label}</Text>
+                    </Flex>
+                ))}
             </Flex>
         </Section>
     )
