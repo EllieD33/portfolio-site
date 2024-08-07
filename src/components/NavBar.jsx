@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { Flex, Box, Text, IconButton, Collapse, VStack, StackDivider } from "@chakra-ui/react";
+import { Flex, Box, Text, IconButton, Collapse, VStack, StackDivider, useColorMode } from "@chakra-ui/react";
 import { Link as ScrollLink } from "react-scroll";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
-const NavItem = ({ to, onClick, children }) => (
+const NavItem = ({ to, colorMode, onClick, children }) => (
     <ScrollLink to={to} smooth={true} duration={500} spy={true} offset={-50} onClick={onClick}>
         <Box
             m={1}
@@ -11,13 +11,15 @@ const NavItem = ({ to, onClick, children }) => (
             borderBottom="2px solid transparent"
             _hover={{ borderBottomColor: "purple.600" }}
         >
-            <Text fontSize="xl" color="black" >{children}</Text>
+            <Text fontSize="xl" color={colorMode === 'dark' ? 'white' : 'black'} >{children}</Text>
         </Box>
     </ScrollLink>
 );
 
-const Navbar = () => {
+const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const { colorMode } = useColorMode();
+
     const handleNavItemClick = () => {
         setIsOpen(false);
     };
@@ -31,11 +33,11 @@ const Navbar = () => {
                     display={{ md: "none" }} 
                 />
             <Flex gap={5} display={{ base: "none", md: "flex" }} alignItems="center" >
-                <NavItem to="About">About</NavItem>
+                <NavItem to="About" colorMode={colorMode} >About</NavItem>
                 <Text fontSize="xl">|</Text>
-                <NavItem to="Skills">Skills</NavItem>
+                <NavItem to="Skills" colorMode={colorMode} >Skills</NavItem>
                 <Text fontSize="xl">|</Text>
-                <NavItem to="Projects">Projects</NavItem>
+                <NavItem to="Projects" colorMode={colorMode} >Projects</NavItem>
             </Flex>
             <Collapse in={isOpen} animateOpacity>
                 <VStack
@@ -60,4 +62,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default NavBar;
