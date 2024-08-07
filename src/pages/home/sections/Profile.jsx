@@ -25,7 +25,7 @@ const Profile = () => {
                         alignItems="center"
                         mt={2}
                         mx="auto"
-                        minW={400}
+                        minW={340}
                     >
                         <Text fontWeight="bold" mb={2} >
                             Open to remote work or hybrid/on-site in the
