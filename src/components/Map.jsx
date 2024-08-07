@@ -27,7 +27,6 @@ const Map = () => {
         locations.forEach((location) => {
             new mapboxgl.Marker()
                 .setLngLat([location.longitude, location.latitude])
-                .setPopup(new mapboxgl.Popup().setText(location.name))
                 .addTo(map.current);
         });
     }, []);
