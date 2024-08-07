@@ -1,4 +1,4 @@
-import { Text, Flex, Image } from "@chakra-ui/react";
+import { Text, Flex, Image, Heading } from "@chakra-ui/react";
 import Section from "../../../components/Section"
 
 const Skills = () => {
@@ -80,6 +80,17 @@ const Skills = () => {
                             <Text>{label}</Text>
                         </Flex>
                         ))}
+            </Flex>
+            <Heading mt={4}  as="h3" fontSize="lg">Currently learning:</Heading>
+            <Flex gap={5}>
+                <Flex mt={2} flexDirection="column" alignItems={"center"}>
+                    <Image src="https://img.icons8.com/ios-filled/50/7506B1/c-sharp-logo.png" boxSize={12} />
+                    <Text>C#</Text>
+                </Flex>
+                <Flex mt={2} flexDirection="column" alignItems={"center"}>
+                    <Image src="https://img.icons8.com/color/48/net-framework.png" boxSize={12} />
+                    <Text>.NET</Text>
+                </Flex>
             </Flex>
         </Section>
     )
