@@ -1,7 +1,4 @@
-import { Icon, Text, Flex, Image } from "@chakra-ui/react";
-import { SiChakraui, SiExpress, SiRedux, SiExpo } from "react-icons/si";
-import { FaJs, FaNodeJs,FaReact, FaHtml5, FaCss3Alt, FaBootstrap, FaGitAlt } from "react-icons/fa";
-import { BiLogoPostgresql } from "react-icons/bi";
+import { Text, Flex, Image } from "@chakra-ui/react";
 import Section from "../../../components/Section"
 
 const Skills = () => {
