@@ -6,12 +6,9 @@ const Profile = () => {
     return (
         <Section title="About Me">
             <Flex maxW={670} >
-                <Box
+                <Box 
                     flex="1"
                     p={4}
-                    borderWidth="1px"
-                    borderRadius="md"
-                    boxShadow="sm"
                 >
                     <Text>
                         I'm a junior full stack developer. Harnessing my
