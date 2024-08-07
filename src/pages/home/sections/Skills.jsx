@@ -1,4 +1,4 @@
-import { Icon, Text, Flex } from "@chakra-ui/react";
+import { Icon, Text, Flex, Image } from "@chakra-ui/react";
 import { SiChakraui, SiExpress, SiRedux, SiExpo } from "react-icons/si";
 import { FaJs, FaNodeJs,FaReact, FaHtml5, FaCss3Alt, FaBootstrap, FaGitAlt } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
@@ -8,90 +8,82 @@ const Skills = () => {
     const skillsIcons = [
         {
             id: 1,
-            icon: FaJs,
+            src: "https://img.icons8.com/color/48/javascript--v1.png",
             label: 'JavaScript',
         },
         {
             id: 2,
-            icon: FaNodeJs,
+            src: "https://img.icons8.com/color/48/nodejs.png",
             label: 'Node.js'
         },
         {
             id: 3,
-            icon: BiLogoPostgresql,
+            src: "https://img.icons8.com/plasticine/48/postgreesql.png",
             label: 'PostgreSQL',
         },
         {
             id: 4,
-            icon: SiExpress,
+            src: "https://img.icons8.com/color/48/express-js.png",
             label: 'Express.js',
         },
         {
             id: 5,
-            icon: FaReact,
+            src: "https://img.icons8.com/color/48/react-native.png",
             label: 'React.js',
         },
         {
             id: 6,
-            icon: FaHtml5,
+            src: "https://img.icons8.com/color/48/html-5.png",
             label: 'HTML',
         },
         {
             id: 7,
-            icon: FaCss3Alt, 
+            src: "https://img.icons8.com/color/48/css3.png",
             label: 'CSS',
         },
         {
             id: 8,
-            icon: SiChakraui,
+            src: "https://img.icons8.com/color/48/chakra-ui.png",
             label: 'Chakra UI',
         },
         {
             id: 9,
-            icon: FaBootstrap,
+            src: "https://img.icons8.com/color/48/bootstrap--v2.png",
             label: 'Bootstrap',
         },
         {
             id: 10,
-            icon: FaGitAlt,
+            src: "https://img.icons8.com/color/48/git.png",
             label: 'Git',
         },
         {
             id: 11,
-            icon: SiRedux,
+            src: "https://img.icons8.com/color/48/redux.png",
             label: 'Redux',
         },
         {
             id: 12,
-            icon: SiExpo,
+            src: "https://img.icons8.com/color/48/expo.png",
             label: 'Expo',
         },
         {
             id: 13,
-            icon: FaReact,
+            src: "https://img.icons8.com/color/48/react-native.png",
             label: 'React Native',
         },
-    ]
+    ];
 
-    const content = (
-        <Flex gap={5} flexWrap="wrap" justifyContent="center" mt={2} >
-                {skillsIcons.map(({ id, icon, label }) => (
+
+    return (
+        <Section title="Skills">
+            <Flex gap={5} flexWrap="wrap" justifyContent="center" mt={2} >
+                {skillsIcons.map(({ id, src, label }) => (
                         <Flex key={id} flexDirection="column" alignItems="center" >
-                            <Icon as={icon} boxSize={12} />
+                            <Image src={src} boxSize={12} />
                             <Text>{label}</Text>
                         </Flex>
                         ))}
-        </Flex>
-    )
-
-    const section = {
-        title: "Skills",
-        text: "I have experience using these technologies. Check out my projects to see some of the ways I have used them.",
-    }
-
-    return (
-        <Section {...section}>
-            {content}
+            </Flex>
         </Section>
     )
 }
