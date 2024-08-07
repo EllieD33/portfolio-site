@@ -1,4 +1,4 @@
-import { Text, Flex, Image, Heading } from "@chakra-ui/react";
+import { Text, Flex, Image, Heading, useColorMode } from "@chakra-ui/react";
 import Section from "../../../components/Section"
 
 const Skills = () => {
@@ -10,7 +10,7 @@ const Skills = () => {
         },
         {
             id: 2,
-            src: "https://img.icons8.com/color/48/nodejs.png",
+            src: "https://img.icons8.com/fluency/48/node-js.png",
             label: 'Node.js'
         },
         {
@@ -21,6 +21,7 @@ const Skills = () => {
         {
             id: 4,
             src: "https://img.icons8.com/color/48/express-js.png",
+            darkSrc: "https://img.icons8.com/ios/50/ffffff/express-js.png",
             label: 'Express.js',
         },
         {
@@ -75,12 +76,14 @@ const Skills = () => {
         { id: 2, src: "https://img.icons8.com/color/48/net-framework.png", label: '.NET' },
     ];
 
+    const { colorMode } = useColorMode();
+
     return (
         <Section title="Skills">
             <Flex gap={5} flexWrap="wrap" justifyContent="center" mt={2} >
-                {skillsIcons.map(({ id, src, label }) => (
+                {skillsIcons.map(({ id, src, darkSrc, label }) => (
                         <Flex key={id} flexDirection="column" alignItems="center" >
-                            <Image src={src} boxSize={12} />
+                            <Image src={darkSrc && colorMode === 'dark' ? darkSrc : src} boxSize={12} />
                             <Text>{label}</Text>
                         </Flex>
                         ))}
