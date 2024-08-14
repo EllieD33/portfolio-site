@@ -3,10 +3,10 @@ import { Card, Heading, Image, Text, Icon, Link, Flex } from "@chakra-ui/react";
 const ProjectCard = ({ image, title, description, stackIcons, liveLink, repoLink }) => {
 
     return (
-    <Card as="article" minW={300} maxW={400} >
+    <Card as="article" minW={300} maxW={400}>
         <Image src={image} alt="Screen shot of hosted project site" borderTopRadius="md" />
-        <Flex flexDirection="column" p={4}>
-            <Heading as="h4" fontSize="xl" >{title}</Heading>
+        <Flex flexDirection="column" p={4} borderTop="1px">
+            <Heading as="h4" fontSize="xl">{title}</Heading>
             <Text>{description}</Text>
             <Flex gap={2} justifyContent="center" my={2} >
                 {
