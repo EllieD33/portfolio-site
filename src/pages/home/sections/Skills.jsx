@@ -10,39 +10,39 @@ const Skills = () => {
         },
         {
             id: 2,
-            src: "https://img.icons8.com/fluency/48/node-js.png",
-            label: 'Node.js'
-        },
-        {
-            id: 3,
-            src: "https://img.icons8.com/plasticine/48/postgreesql.png",
-            label: 'PostgreSQL',
-        },
-        {
-            id: 4,
-            src: "https://img.icons8.com/color/48/express-js.png",
-            darkSrc: "https://img.icons8.com/ios/50/ffffff/express-js.png",
-            label: 'Express.js',
-        },
-        {
-            id: 5,
-            src: "https://img.icons8.com/color/48/react-native.png",
-            label: 'React.js',
-        },
-        {
-            id: 6,
             src: "https://img.icons8.com/color/48/html-5.png",
             label: 'HTML',
         },
         {
-            id: 7,
+            id: 3,
             src: "https://img.icons8.com/color/48/css3.png",
             label: 'CSS',
         },
         {
+            id: 4,
+            src: "https://img.icons8.com/color/48/react-native.png",
+            label: 'React.js',
+        },
+        {
+            id: 5,
+            src: "https://img.icons8.com/color/48/redux.png",
+            label: 'Redux',
+        },
+        {
+            id: 6,
+            src: "https://img.icons8.com/color/48/react-native.png",
+            label: 'React Native',
+        },
+        {
+            id: 7,
+            src: "https://img.icons8.com/fluency/48/node-js.png",
+            label: 'Node.js',
+        },
+        {
             id: 8,
-            src: "https://img.icons8.com/color/48/chakra-ui.png",
-            label: 'Chakra UI',
+            src: "https://img.icons8.com/color/48/express-js.png",
+            darkSrc: "https://img.icons8.com/ios/50/ffffff/express-js.png",
+            label: 'Express.js',
         },
         {
             id: 9,
@@ -51,23 +51,28 @@ const Skills = () => {
         },
         {
             id: 10,
-            src: "https://img.icons8.com/color/48/git.png",
-            label: 'Git',
+            src: "https://img.icons8.com/fluency/48/tailwind_css.png",
+            label: 'Tailwind',
         },
         {
             id: 11,
-            src: "https://img.icons8.com/color/48/redux.png",
-            label: 'Redux',
+            src: "https://img.icons8.com/color/48/chakra-ui.png",
+            label: 'Chakra UI',
         },
         {
             id: 12,
+            src: "https://img.icons8.com/plasticine/48/postgreesql.png",
+            label: 'PostgreSQL',
+        },
+        {
+            id: 13,
             src: "https://img.icons8.com/color/48/expo.png",
             label: 'Expo',
         },
         {
-            id: 13,
-            src: "https://img.icons8.com/color/48/react-native.png",
-            label: 'React Native',
+            id: 14,
+            src: "https://img.icons8.com/color/48/git.png",
+            label: 'Git',
         },
     ];
 
