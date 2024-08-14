@@ -15,7 +15,7 @@ const Map = () => {
             container: mapContainer.current, 
             style: "mapbox://styles/mapbox/streets-v11", 
             center: [-1.8522, 53.5850], 
-            zoom: 8, 
+            zoom: 7, 
         });
 
         const locations = [
@@ -34,7 +34,7 @@ const Map = () => {
     return (
         <div
             ref={mapContainer}
-            style={{ width: "100%", height: "400px", maxWidth: 550 }}
+            style={{ width: "300px", height: "300px", maxWidth: 550, borderRadius: "5px" }}
         />
     );
 };
