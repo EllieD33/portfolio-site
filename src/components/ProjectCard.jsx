@@ -1,24 +1,28 @@
-import { Card, Heading, Image, Text, Icon, Link, Flex } from "@chakra-ui/react";
+import { Card, Heading, Image, Text, Link, Flex, useColorMode } from "@chakra-ui/react";
 
 const ProjectCard = ({ image, title, description, stackIcons, liveLink, repoLink }) => {
+    const { colorMode } = useColorMode();
 
     return (
     <Card as="article" minW={300} maxW={400}>
-        <Image src={image} alt="Screen shot of hosted project site" borderTopRadius="md" />
+        <Image src={image} alt="Screen shot of hosted project site" maxH={200} borderTopRadius="md" transition="transform 0.3s ease-in-out" _hover={{ transform: "scale(1.50)" }} />
         <Flex flexDirection="column" p={4} borderTop="1px">
             <Heading as="h4" fontSize="xl">{title}</Heading>
             <Text>{description}</Text>
-            <Flex gap={2} justifyContent="center" my={2} >
+            <Flex wrap="wrap"  gap={2} justifyContent="center" my={2} borderTop="2px" borderColor="purple.600" pt={3} >
                 {
-                    stackIcons.map((icon, index) => (
-                        <Icon as={icon} key={index} aria-label={`Tech icon ${icon}`} boxSize={10} />
+                    stackIcons.map((icon) => (
+                        <Flex key={icon.id} flexDirection="column" alignItems="center">
+                            <Image src={icon.darkSrc && colorMode === 'dark' ? icon.darkSrc : icon.src} boxSize={12} />
+                            <Text>{icon.label}</Text>
+                        </Flex>
                     ))
                 }
             </Flex>
-            <Flex gap={4} justifyContent="center">
-                <Link href={liveLink}>Visit live site</Link>
+            <Flex gap={4} justifyContent="center" borderTop="2px" borderColor="purple.600" pt={3} >
+                <Link href={liveLink} isExternal>Visit live site</Link>
                 <Text>|</Text>
-                <Link href={repoLink}>View the code</Link>
+                <Link href={repoLink} isExternal>View the code</Link>
             </Flex>
         </Flex>
     </Card>
