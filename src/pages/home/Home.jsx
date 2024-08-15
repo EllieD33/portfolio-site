@@ -2,6 +2,7 @@ import { Flex, VStack, StackDivider } from "@chakra-ui/react";
 import Skills from "./sections/Skills";
 import Profile from "./sections/Profile";
 import Projects from "./sections/Projects";
+import Background from "../../components/Background";
 
 const Home = () => {
     return (
