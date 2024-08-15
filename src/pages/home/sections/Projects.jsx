@@ -35,7 +35,7 @@ const Projects = () => {
             image: PortfolioImage,
             description:
                 "You're looking at it! A frontend project using React.js and ChakraUI.",
-            stackIcons: skillsIcons.filter(skills => skills.id === 1 || skills.id === 4 || skills.id === 11),
+            stackIcons: skillsIcons.filter(skills => skills.id === 1 || skills.id === 3 || skills.id === 4 || skills.id === 7 || skills.id === 11),
             liveLink: "www.google.co.uk",
             repoLink: "www.github.com",
         },
