@@ -1,8 +1,16 @@
-# React + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+Welcome to my portfolio website. 
 
-Currently, two official plugins are available:
+## Technologies Used
+- **React.js**: For building dynamic user interfaces
+- **Chakra UI**: For a consistent and accessible design system
+- **JavaScript**: For functionality
+- **CSS**: For animated background
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Project Link]: TO ADD
+
+---
+
+Thank you for checking out my portfolio! If you have any questions or feedback, feel free to reach out.
