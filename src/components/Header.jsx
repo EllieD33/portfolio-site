@@ -21,7 +21,7 @@ const Header = () => {
             zIndex="sticky"
             bg={colorMode === 'dark' ? "gray.700" : 'white'} 
         >
-            <Flex mt={5} mx={5} justify="space-between">
+            <Flex mt={5} mx={5} justify="space-between" alignItems="center">
                 <Heading as="h1">Ellen Daly</Heading>
                 <Flex alignItems="center" gap={5}>
                     <NavBar />
