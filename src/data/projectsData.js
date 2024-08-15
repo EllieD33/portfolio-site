@@ -2,7 +2,8 @@ import { skillsIcons } from "./skillsIconsData";
 import NewsHubImage from "../assets/NewsHub.png"; 
 import WalkingWestYorksImage from "../assets/WalkingWestYorks.png";
 import PortfolioImage from "../assets/Portfolio.png"; 
-import WanderWaysImage from "../assets/WanderWays.png"
+import WanderWaysImage from "../assets/WanderWays.png";
+import YanivImage from "../assets/Yaniv.png";
 
 export const projects = [
     {
@@ -26,18 +27,27 @@ export const projects = [
         repoLink: "https://github.com/EllieD33/fe-news",
     },
     {
-        id: 2,
+        id: 3,
         title: "Walking West Yorkshire",
         image: WalkingWestYorksImage,
         description:
-            "A dynamic, responsive website dedicated to exploring the picturesque walks of West Yorkshire! This project features a user-friendly front end built with Bootstrap 5, ensuring an adaptive design that looks great on all devices. The frontend leverages HTML5 for structure and JavaScript for form functionality, including validation and modal confirmations.",
+        "A dynamic, responsive website dedicated to exploring the picturesque walks of West Yorkshire! This project features a user-friendly front end built with Bootstrap 5, ensuring an adaptive design that looks great on all devices. The frontend leverages HTML5 for structure and JavaScript for form functionality, including validation and modal confirmations.",
         stackIcons: skillsIcons.filter(skills => skills.id === 1 || skills.id === 2 || skills.id === 3 || skills.id === 9),
         liveLink:
-            "https://ellied33.github.io/Walking-Website-Responsive/index.html",
+        "https://ellied33.github.io/Walking-Website-Responsive/index.html",
         repoLink: "https://github.com/EllieD33/Walking-Website-Responsive",
     },
     {
-        id: 3,
+        id: 4,
+        title: "Yaniv Scoreboard",
+        image: YanivImage,
+        description: "A frontend app built using React.js and Tailwind. Yaniv is a card game I play often with my family, but keeping score can feel like a chore - so I built this clean, simple app to solve the problem. Player names can be customised, while the logic under the hood implements scoring rules automatically and declares a winner. With the app, score keeping is easy! Have a read of the rules page so you can play too!",
+        stackIcons: skillsIcons.filter(skills => skills.id === 1 || skills.id === 4 || skills.id === 7 || skills.id === 10),
+        liveLink: "https://yaniv-scoreboard.netlify.app//",
+        repoLink: "https://github.com/EllieD33/yaniv-app",
+    },
+    {
+        id: 5,
         title: "Portfolio site",
         image: PortfolioImage,
         description:

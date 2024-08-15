@@ -8,7 +8,6 @@ const ProjectCard = ({ image, title, description, stackIcons, liveLink, demoLink
         <Image 
             src={image} 
             alt="Screen shot of hosted project site" 
-            objectFit="cover" 
             width="100%" 
             maxH={204}
             transition="transform 0.3s ease-in-out" 
