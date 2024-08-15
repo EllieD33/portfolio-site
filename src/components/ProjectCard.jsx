@@ -1,6 +1,6 @@
 import { Card, Heading, Image, Text, Link, Flex, useColorMode } from "@chakra-ui/react";
 
-const ProjectCard = ({ image, title, description, stackIcons, liveLink, repoLink }) => {
+const ProjectCard = ({ image, title, description, stackIcons, liveLink, demoLink, repoLink }) => {
     const { colorMode } = useColorMode();
 
     return (
@@ -32,7 +32,7 @@ const ProjectCard = ({ image, title, description, stackIcons, liveLink, repoLink
                     }
                 </Flex>
                 <Flex gap={4} justifyContent="center" borderTop="2px" borderColor="purple.600" pt={3} >
-                    <Link href={liveLink} isExternal>Visit live site</Link>
+                    <Link href={liveLink ? liveLink : demoLink} isExternal>{liveLink ? "Visit live site" : "View demo"}</Link>
                     <Text>|</Text>
                     <Link href={repoLink} isExternal>View the code</Link>
                 </Flex>

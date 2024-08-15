@@ -2,10 +2,21 @@ import { skillsIcons } from "./skillsIconsData";
 import NewsHubImage from "../assets/NewsHub.png"; 
 import WalkingWestYorksImage from "../assets/WalkingWestYorks.png";
 import PortfolioImage from "../assets/Portfolio.png"; 
+import WanderWaysImage from "../assets/WanderWays.png"
 
 export const projects = [
     {
         id: 1,
+        title: "WanderWays: Full stack mobile app",
+        image: WanderWaysImage,
+        description:
+            "WanderWays is a full stack mobile app built using React Native. Originally built as part of a group project over an 8 day sprint, I have continued to develop both front and back end since graduation. With WanderWays, users can record their hikes live using location services, upload their routes to share with others, and explore existing routes uploaded by the community.",
+        stackIcons: skillsIcons.filter(skills => skills.id === 1 || skills.id === 5 || skills.id === 6 || skills.id === 7 || skills.id === 8 || skills.id === 11 || skills.id === 12 || skills.id === 13),
+        demoLink: "https://vimeo.com/999201294",
+        repoLink: "https://github.com/EllieD33/walk-the-line-frontend",
+    },
+    {
+        id: 2,
         title: "NewsHub: Full stack web app",
         image: NewsHubImage,
         description:
