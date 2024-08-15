@@ -1,4 +1,4 @@
-import { Box, Card, Heading, Image, Text, Link, Flex, useColorMode } from "@chakra-ui/react";
+import { Card, Heading, Image, Text, Link, Flex, useColorMode } from "@chakra-ui/react";
 
 const ProjectCard = ({ image, title, description, stackIcons, liveLink, repoLink }) => {
     const { colorMode } = useColorMode();
@@ -10,7 +10,7 @@ const ProjectCard = ({ image, title, description, stackIcons, liveLink, repoLink
             alt="Screen shot of hosted project site" 
             objectFit="cover" 
             width="100%" 
-            height="100%"
+            maxH={204}
             transition="transform 0.3s ease-in-out" 
             _hover={{ transform: "scale(1.50)", zIndex: 2, boxShadow:"0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)"
             }} 
