@@ -1,18 +1,27 @@
-import { Card, Heading, Image, Text, Link, Flex, useColorMode } from "@chakra-ui/react";
+import { Box, Card, Heading, Image, Text, Link, Flex, useColorMode } from "@chakra-ui/react";
 
 const ProjectCard = ({ image, title, description, stackIcons, liveLink, repoLink }) => {
     const { colorMode } = useColorMode();
 
     return (
     <Card as="article" minW={300} maxW={400}>
-        <Image src={image} alt="Screen shot of hosted project site" maxH={200} borderTopRadius="md" boxShadow="0 2px 5px rgba(0, 0, 0, 0.1)" transition="transform 0.3s ease-in-out" _hover={{ transform: "scale(1.50)", zIndex: 2  }} />
-        <Flex flexDirection="column" p={4} borderTop="1px" justifyContent="space-between" h="100%" >
+        <Image 
+            src={image} 
+            alt="Screen shot of hosted project site" 
+            objectFit="cover" 
+            width="100%" 
+            height="100%"
+            transition="transform 0.3s ease-in-out" 
+            _hover={{ transform: "scale(1.50)", zIndex: 2, boxShadow:"0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)"
+            }} 
+        />     
+        <Flex flexDirection="column" p={4} borderTop="1px" justifyContent="space-between" flexGrow={1} >
             <Flex flexDirection="column">
                 <Heading as="h4" fontSize="xl">{title}</Heading>
                 <Text>{description}</Text>
             </Flex>
             <Flex flexDirection="column">
-                <Flex wrap="wrap"  gap={2} justifyContent="center" my={2} borderTop="2px" borderColor="purple.600" pt={3} >
+                <Flex wrap="wrap"  gap={2} justifyContent="center" my={2} borderTop="2px" borderColor="purple.600" pt={3} minH={167} alignItems="center">
                     {
                         stackIcons.map((icon) => (
                             <Flex key={icon.id} flexDirection="column" alignItems="center">
