@@ -6,7 +6,6 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 const NavItem = ({ to, colorMode, onClick, children }) => (
     <ScrollLink to={to} smooth={true} duration={500} spy={true} offset={-50} onClick={onClick}>
         <Box
-            as="a" 
             role="link"
             tabIndex={0}
             m={1}
