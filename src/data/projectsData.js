@@ -53,7 +53,7 @@ export const projects = [
         description:
             "You're looking at it! A frontend project built in node environment using React.js. I used ChakraUI to provide consistent, responsive styling with some additional CSS for an animated background.",
         stackIcons: skillsIcons.filter(skills => skills.id === 1 || skills.id === 3 || skills.id === 4 || skills.id === 7 || skills.id === 11),
-        liveLink: "www.google.co.uk",
-        repoLink: "www.github.com",
+        liveLink: "https://ellen-daly-portfolio.netlify.app/",
+        repoLink: "https://github.com/EllieD33/portfolio-site",
     },
 ];
