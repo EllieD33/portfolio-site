@@ -9,10 +9,10 @@ const ProjectCard = ({ image, title, description, stackIcons, liveLink, demoLink
             src={image} 
             alt="Screen shot of hosted project site" 
             width="100%" 
+            borderTopRadius="md"
             maxH={204}
             transition="transform 0.3s ease-in-out" 
-            _hover={{ transform: "scale(1.50)", zIndex: 2, boxShadow:"0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)"
-            }} 
+            _hover={{ transform: "scale(1.50)", zIndex: 2, boxShadow:"0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08)", borderRadius: "md"}} 
         />     
         <Flex flexDirection="column" p={4} borderTop="1px" justifyContent="space-between" flexGrow={1} >
             <Flex flexDirection="column">
